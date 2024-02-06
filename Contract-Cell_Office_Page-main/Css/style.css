@@ -1,0 +1,1072 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* check box for navbar start */
+
+#checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* check box for navbar Ends */
+
+body {
+    /* background-color: rgb(32, 32, 32); */
+    min-width: 280px;
+    height: 100vh;
+    background-image: url(/images/5134336.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
+}
+
+.container {
+    /* border: 4px solid rgb(238, 241, 198); */
+    border: 4px solid rgb(255, 170, 0);
+    border-radius: 30px;
+    margin: 0 auto 10px auto;
+    /* background-color: black; */
+
+    /* background-image: url(/images/diwali2.png); */
+    background-position: center;
+    background-size: 50%;
+
+    position: relative;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* background-repeat: no-repeat; */
+}
+
+.container::before {
+    /*  image background blur */
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* border: 2px solid red; */
+
+    width: 100%;
+    /* isko media query me bhi likhna hai */
+    height: 100%;
+    border-radius: 25px;
+    /* Match the container's border-radius */
+
+}
+
+#myname {
+    position: absolute;
+    right: 12px;
+    top: 80px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    /* border: 2px solid red; */
+
+}
+
+/* navbar start */
+.navbar {
+    display: flex;
+    border: 1px solid black;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    background-color: rgb(136, 181, 221);
+    position: relative;
+    top: -22px;
+}
+
+.nav-item:hover {
+    background-color: rgb(5, 51, 117);
+    color: aliceblue;
+}
+
+.nav-item {
+    /* anchor tag inside navbar */
+    flex: 1;
+    border: 1px solid rgb(5, 51, 117);
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 3px 0;
+
+}
+
+.file-status-small-screen{
+    display: none;
+}
+
+/* navbar ends */
+
+
+#dateq {
+    /* border: 2px solid white; */
+    font-size: 5.5rem;
+    /* color:rgb(5, 51, 117); */
+    /* color: rgb(255, 255, 255); change to normal */
+    color: rgb(249, 99, 48);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 5;
+   
+
+
+
+    display: flex;
+    justify-content: center;
+    /* Horizontal centering */
+    align-items: center;
+    /* Vertical centering */
+    -webkit-text-stroke: 1px #ffffff
+}
+
+
+#timeq {
+    /* border: 2px solid white; */
+    font-size: 6rem;
+    /* color: rgb(255, 255, 255);  change to normal */
+    color: rgb(249, 99, 48);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    height: 90px;
+    width: 80px;
+    /* border: 2px solid red; */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/04/SAIL_Logo.PNG);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+
+}
+
+/* .mainbox{
+    border: 2px solid red;
+} */
+
+.mainbox1 {
+    border: 2px solid rgb(5, 51, 117);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+h4 {
+    color: rgb(5, 51, 117);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+h6 {
+    /* Sail BSL Heading*/
+    /* border: 2px solid red; */
+    color: rgb(5, 51, 117);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    top: -35px;
+    line-height: 20px;
+
+}
+
+#email {
+    color: rgb(5, 51, 117);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    position: relative;
+    top: -30px;
+    line-height: 0px;
+}
+
+#email>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#movtext {
+    /* message box */
+    color: rgb(255, 0, 0);
+    /* background-color: black; */
+    /* border: 2px solid red; */
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    top: 124px;
+
+
+}
+
+#movtext>span {
+    color: aliceblue;
+}
+
+/* Wish Container start */
+#wishbox {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgb(56, 55, 55);
+    /* border: 4px solid rgb(238, 241, 198); */
+    border: 4px solid rgb(255, 170, 0);
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: -32px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+/* Wish Container Ends */
+
+/* festival wish box start */
+#festivalwishcontainer {
+    /* any festival wish */
+    color: rgb(3, 3, 3);
+    text-align: center;
+    position: relative;
+    top: -25px;
+    /* border: 1px solid rgb(255, 215, 0); */
+    border-left: none;
+    border-right: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+/* festival image */
+#festivalimg {
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* background-image: url(/images/—Pngtree—happy\ diwali\ festival\ greeting_6928209\ \(2\).png); */
+    background-image: url(/images/pngtree-jay-shree-ram-hindi-text-png-image_252444.png);
+    background-position: center;
+    background-size: 180px;
+    /* margin: auto; */
+    background-repeat: no-repeat;
+}
+
+#festivalwishcontainer h1 {
+    /* border: 5px dotted orange; */
+    padding: 3px 0;
+    font-family:Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    /* font-style: italic; */
+    color: rgb(5, 51, 117);
+    text-transform: uppercase;
+    /* max-width: 800px; */
+}
+
+/* festival wish box Ends */
+
+#festp{
+    display: block;
+    color: rgb(255, 170, 0);
+    font-weight: 700;
+    font-size: 33px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+.buttonsec {
+    /* ALL BUTTONS */
+    /* border: 2px solid white; */
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.pgbtn {
+    /* all page buttons */
+    color: rgb(5, 51, 117);
+    padding: 5px 10px;
+    border-radius: 5%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-right: 10px;
+
+
+}
+
+.pgbtn:hover {
+    background-color: aqua;
+}
+
+
+/* Notes section start  */
+
+b {
+    /*Note*/
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: underline red;
+    /* margin-top: 5px; */
+}
+
+#notes {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0%;
+    margin-top: 15px;
+}
+
+ul>li {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* list-style: none; */
+
+
+}
+
+span {
+    color: red;
+}
+
+/* Notes section Ends  */
+
+
+/* Animation keyframes */
+
+/* blinking important msg effect start */
+
+
+/* Define the blinking animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* Apply the blinking animation to the text */
+
+#wish2 {
+    animation: blink 0.4s infinite;
+}
+
+#festivalwishcontainer> h1{
+    animation: blink 0.4s infinite;
+}
+
+/* blinking important msg effect End */
+
+/* ...............................................Media Queries.................................................................... */
+@media screen and (max-width: 1072px) {
+    #movtext {
+        /* message box */
+        position: absolute;
+        width: 100%;
+        top: 143px;
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (max-width: 916px) {
+    body {
+        background-repeat: repeat-y;
+
+    }
+
+    #myname {
+        /* my logo */
+        right: 4px;
+        top: 56px;
+        font-size: 9px;
+        /* border: 2px solid red; */
+
+    }
+
+    .mainbox1 {
+        height: 70px;
+    }
+
+    .nav-item {
+        /* anchor tag inside navbar */
+        font-size: 10px;
+    }
+
+
+    #movtext {
+        /* message box */
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        font-size: 16px;
+
+    }
+
+    /*  container part start */
+    .container {
+        /* border: 5px solid rgb(238, 241, 198); */
+        border-radius: 50px;
+        margin: 10px auto;
+        padding: 5px;
+
+
+    }
+
+    .container::before {
+        top: 0;
+        left: 0;
+        border-radius: 45px;
+
+    }
+
+    /*  container part Ends */
+
+    #dateq {
+        font-size: 50px;
+    }
+
+    #timeq {
+        font-size: 50px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    h6 {
+        font-size: 10px;
+        text-align: center;
+        top: -35px;
+
+    }
+
+    #wishbox {
+        /* wishing box */
+        /* height: 25px; */
+        font-size: 15px;
+        top: -5px;
+
+    }
+
+    /* festival wish box start */
+    #festivalwishcontainer {
+        /* any festival wish */
+        top: 5px;
+    }
+
+    /* festival image */
+    #festivalimg {
+        height: 100px;
+        width: 200px;
+    }
+
+    #festivalwishcontainer h1 {
+        /* border: 5px dotted orange; */
+        font-size: 15px;
+    }
+
+    #festp{
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    /* festival wish box Ends */
+
+    .buttonsec {
+        /* ALL BUTTONS */
+        display: none;
+
+    }
+
+    #image {
+        position: absolute;
+        right: 3px;
+        top: 25px;
+        height: 40px;
+        /* border: 2px solid red; */
+    }
+
+    /* Notes Section start */
+    b {
+        font-size: 14px;
+        position: relative;
+        top: 6px;
+
+    }
+
+    #notes li {
+        font-size: 12px;
+
+    }
+
+    #notes #list1 {
+        position: relative;
+        top: -7px;
+    }
+
+    #notes #list2 {
+        position: relative;
+        top: -14px;
+    }
+
+    /* Notes Section Ends */
+
+}
+
+
+@media screen and (max-width: 938px) and (min-width: 916px) {
+    #movtext {
+        /* message box */
+        top: 142px;
+        font-size: 15px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 683px) {
+
+    /*my logo */
+    #image {
+        position: absolute;
+        right: 3px;
+        top: 35px;
+        height: 30px;
+        /* border: 2px solid red; */
+    }
+
+    /* Notes Section start */
+    b {
+        font-size: 12px;
+        position: relative;
+        top: 6px;
+
+    }
+
+    #notes li {
+        font-size: 10px;
+
+    }
+
+    /* #notes #list1{
+        position: relative;
+        top: -8px;
+    } */
+
+    /* Notes Section Ends */
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+
+    #myname {
+        /* my logo */
+        right: 4px;
+        top: 3px;
+        font-size: 6px;
+    }
+
+    /* navbar start */
+    .navbar {
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 130px;
+        border: none;
+        z-index: 50;
+        height: 100vh;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        left: -100%;
+        transition: .5s;
+
+    }
+
+    .nav-item {
+        /* anchor tag inside navbar */
+        border-bottom: 1px solid rgb(5, 51, 117);
+        font-size: 16px;
+        font-weight: 600;
+        max-height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(237, 237, 237);
+        padding: 6px 0;
+        display: block;
+        line-height: 35px;
+
+
+    }
+
+    .nav-item:hover {
+        background-color: rgb(5, 51, 117);
+    }
+
+    #check {
+        display: none;
+
+    }
+
+    #check:checked~.navbar {
+        /* display: block; */
+        left: 0;
+        background-color: rgb(136, 181, 221);
+
+    }
+
+    #menubar {
+        /* border: 1px solid white; */
+        padding: 2px 4px 2px 0;
+        margin: 4px 0;
+        display: flex;
+        justify-content: end;
+        background-color: rgb(136, 181, 221);
+
+    }
+
+    #checkbtn {
+        display: block;
+        color: aliceblue;
+        font-size: 20px;
+        width: 80px;
+        position: relative;
+        /* border: 1px solid white; */
+        text-align: center;
+
+
+
+    }
+    .file-status-big-screen{
+        display: none;
+    }
+    .file-status-small-screen{
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #file-status-small-screen-text{
+        color: #ff0000;
+        font-size: 9px;
+        position: absolute;
+        top: 70px;
+        left: 40px; 
+
+
+        
+    }
+
+    .nav-about{
+        border-bottom: 2px solid rgb(5, 51, 117);;
+    }
+
+
+    /* navbar ends */
+
+    /* contaier part start */
+    .container {
+        border: 3px solid rgb(255, 170, 0);
+        border-radius: 10px;
+        /* padding: 10px; */
+        margin: 0 0 10px 0;
+    }
+
+    .container::before {
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+
+    }
+
+    /* contaier part End */
+
+    #dateq {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #timeq {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #wishbox{
+        border: 3px solid rgb(255, 170, 0);
+    }
+
+    .mainbox1 {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        /* border: 2px solid black; */
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin: auto;
+        position: relative;
+        top: -18px;
+        margin-bottom: 2px;
+    }
+
+
+    h6 {
+        /* Sail BSL Heading*/
+        font-size: 10px;
+        text-align: center;
+        top: -28px;
+        /* display: none; */
+
+    }
+
+    #email {
+        font-size: 10px;
+        top: -28px;
+    }
+
+    #movtext {
+        /* message box */
+        top: 85px;
+        font-size: 13px;
+
+
+    }
+
+    /*  page button Section Start */
+    .buttonsec {
+        /* ALL BUTTONS */
+        /* display: block; */
+        /* border: 2px solid red; */
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 8px;
+
+
+
+    }
+
+    .pgbtn {
+        font-size: 15px;
+        text-align: center;
+
+
+    }
+
+    /*  page button Section Ends */
+
+    /* festival wish box start */
+    #festivalwishcontainer {
+        flex-direction: column;
+        padding-bottom: 3px;
+
+    }
+
+    /* festival image */
+    #festivalimg {
+        height: 100px;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    #festivalwishcontainer h1 {
+        /* border: 5px dotted orange; */
+        font-size: 15px;
+        padding: 0 4px;
+    }
+
+    #festp{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* festival wish box Ends */
+
+
+    /* Notes Section start */
+    b {
+        font-size: 12px;
+        position: relative;
+        top: 180px;
+        display: none;
+
+    }
+
+    #notes li {
+        font-size: 10px;
+        position: relative;
+        top: 290px;
+        display: none;
+
+    }
+
+    #notes #list1 {
+        position: relative;
+        top: 280px;
+        display: none;
+    }
+
+    #notes #list2 {
+        position: relative;
+        top: 268px;
+        display: none;
+    }
+
+    /* Notes Section Ends */
+
+
+
+    .leftbox, .rightbox, .containerHanuman, .cracker, .cracker1{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .container {
+        border: 2px solid rgb(238, 241, 198);
+        border-radius: 5px;
+
+    }
+
+    /* navbar start */
+    .navbar {
+        /* border: 2px solid red; */
+
+        top: 150px;
+        left: -150%;
+        transition: 0.4s;
+    }
+
+    .nav-item {
+        /* anchor tag inside navbar */
+        font-size: 12px;
+        padding: 6px 0;
+
+    }
+
+    .nav-item:hover {
+        background-color: rgb(5, 51, 117);
+    }
+
+    #check {
+        display: none;
+
+    }
+
+    #check:checked~.navbar {
+        display: block;
+        left: 0;
+    }
+
+    #checkbtn {
+        display: block;
+        color: aliceblue;
+        font-size: 20px;
+        margin: 5px;
+        /* border: 2px solid red; */
+        width: 70px;
+
+
+    }
+
+    #check:checked+#checkbtn {
+        color: rgb(136, 181, 221);
+    }
+
+    /* navbar ends */
+
+    .container::before {
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+
+    }
+
+    #dateq {
+        font-size: 15px;
+        color: aliceblue;
+        margin: 0;
+    }
+
+    #timeq {
+        font-size: 15px;
+        color: aliceblue;
+    }
+
+    .mainbox1 {
+        display: flex;
+        flex-direction: column;
+        height: 105px;
+
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        /* border: 2px solid black; */
+        background-position: center;
+        background-size: 80px;
+        margin: auto;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin: auto;
+        position: relative;
+        top: -22px;
+        margin-bottom: 2px;
+    }
+
+
+    h6 {
+        /* Sail BSL Heading*/
+        font-size: 10px;
+        text-align: center;
+        top: -31px;
+        /* display: none; */
+
+    }
+
+    #email {
+        font-size: 9px;
+        line-height: 1px;
+    }
+
+    #movtext {
+        /* message box */
+        position: absolute;
+        width: 100%;
+        top: 110px;
+        font-size: 10px;
+
+    }
+
+    /* -------------------------------------------------------------------------- */
+
+    #wishbox {
+        /* wishing box */
+        font-size: 10px;
+        top: -8px;
+        /* width: 20px; */
+        border: 2px solid;
+
+    }
+
+    .buttonsec {
+        /* ALL BUTTONS */
+        display: none;
+
+    }
+
+    /* festival wish box start */
+    /* festival image */
+    #festivalimg {
+        height: 40px;
+        /* width: 100px; */
+
+    }
+
+    #festivalwishcontainer h1 {
+        /* border: 5px dotted orange; */
+        font-size: 8px;
+        padding: 4px 3px;
+    }
+
+    /* festival wish box Ends */
+
+
+    /* Notes Section start */
+    /* b {
+        font-size: 10px;
+        position: relative;
+        top: 6px;
+
+    }
+
+    #notes li {
+        font-size: 8px;
+
+    }
+
+    #notes #list1 {
+        position: relative;
+        top: -11px;
+    }
+
+    #notes #list2 {
+        position: relative;
+        top: -20px;
+    }
+
+    Notes Section Ends */
+
+
+
+}

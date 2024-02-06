@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: red;
+      margin-bottom: 16px;
+    }
+    @media screen and (max-width: 700px) {
+
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin-top: 15px;
+      display: flex;
+      align-items:start;
+      justify-content:center;
+      height: 100vh;
+    }
+
+      #login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+        margin-top: 5px;
+    }
+    }
+  </style>
+</head>
+<body>
+
+<div id="login-container">
+  <h2>Login to View Attendance</h2>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <div class="error-message" id="error-message"></div>
+
+    <button type="button" onclick="validateLogin()">Login</button>
+  </form>
+</div>
+
+<script>
+  function validateLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var errorMessage = document.getElementById("error-message");
+
+    // Basic validation (you can add more complex validation as needed)
+    if (username === "" || password === "") {
+      errorMessage.textContent = "Username and password are required";
+    } else if (username !== "contractcell" || password !== "Attendance@2024") {
+      errorMessage.textContent = "Invalid username or password";
+    } else {
+      errorMessage.textContent = "";
+      alert("Login successful! Redirecting to the dashboard..."); // Replace this with actual redirection logic
+      window.location.href = "/Pages/attendance.html";
+    }
+  }
+</script>
+
+</body>
+</html>

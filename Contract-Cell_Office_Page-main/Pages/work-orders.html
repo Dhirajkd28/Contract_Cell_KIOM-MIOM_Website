@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav-highlight {
+            background-color: rgb(5, 51, 117);
+            color: white;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 10px;
+        }
+
+        .work-orders {
+            margin: 0px 20px 0px 50px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+
+        }
+
+        .work-orders a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .work-orders {
+                font-size: 8px;
+                margin: 0px 20px 0px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myname">
+        <p>Developed by: Dhiraj</p>
+        <!-- <p> Dhiraj</p> -->
+    </div>
+
+    <div class="mainbox">
+        <div class="mainbox1">
+            <div class="logo"></div>
+            <h4>Contract Cell-Apex Office </h4>
+        </div>
+        <h6> SAIL, BSL KIOM-MIOM Group of Mines </h6>
+        <h6 id="email">Email: <a href="#">Contractcellkiommiom@gmail.com</a></h6>
+    </div>
+    <input type="checkbox" id="check" name="" value="">
+    <div id="menubar" for="check">
+        <label for="check" id="checkbtn"> Menu <i class="fa-solid fa-bars"></i></label>
+    </div>
+
+    <div class="navbar">
+        <a href="/index.html" class="nav-item">Home</a>
+        <a href="https://docs.google.com/spreadsheets/d/13fw-wUaDT3gFdzYFoX57iuJ0pVzP1zkEW_xtCnpO3gI/edit?usp=sharing"
+            target="_blank" class="nav-item file-status-big-screen">File Status</a>
+        <a href="https://docs.google.com/spreadsheets/d/1d1fX8ZdVsGPxNP8ByaaABYUwOz-SJp_MU81YJyZwggY/edit?usp=sharing"
+            target="_blank" class="nav-item file-status-small-screen">File Status <span
+                id="file-status-small-screen-text"> Google Sheets App recommended</span></a>
+        <a href="https://docs.google.com/spreadsheets/d/1GEiUYsBGGw_JeOOcHvGw5gw2p34bz_s9S-QVLmOD2ps/edit?usp=sharing"
+            target="_blank" class="nav-item">Tenders</a>
+        <a href="/Pages/work-orders.html" class="nav-item nav-highlight">Work Orders</a>
+        <!-- <a href="#" class="nav-item">Contractor Details</a> -->
+        <a href="/Pages/deptcontact.html" class="nav-item">Department Contacts</a>
+        <a href="/Pages/contact.html" class="nav-item">Contact Us</a>
+        <!-- <a href="#" class="nav-item">Log in</a> -->
+    </div>
+
+    <h1>Download Work Orders FY 2023-24</h1>
+
+
+    <!-- add work orders below -->
+    <ul>
+        <li class="work-orders"><a href="https://drive.google.com/file/d/1ktHZ-j3UWqxB6S_GpQ-lRLvmAgriMUEI/view?usp=sharing"
+            target="_blank">WO No: CC/5050/LTE/MIOM/W-117/964, Dated: 28/11/2023. House-Keeping and Catering of Guest House-II.</a></li>
+        <li class="work-orders"><a href="https://drive.google.com/file/d/13utNklLSJyaUH6jH0gscf2rBwXJlBrN6/view?usp=sharing"
+            target="_blank">WO No: CC/5155/LTE/KIOM/W-116/917, Dated:14/11/2023. Provision of Waiting Room for CGM
+            Secretariat, KIOM.</a></li>
+        <li class="work-orders"><a href="https://drive.google.com/file/d/13utNklLSJyaUH6jH0gscf2rBwXJlBrN6/view?usp=sharing"
+            target="_blank">WO No: CC/4953/LTE/KIOM/W-34/298, Dated: 19/06/2023. Complete Body Repairing and Painting of
+            Bus Req No: OR-09P-7945 of KIOM.</li>
+    </ul>
+</body>
+
+</html>
